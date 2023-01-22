@@ -2,8 +2,6 @@
   id: ansible-apps
   owner: !group managers
   body:
-    - !group
-      id: ansible-apps
     - &hosts
       - !host
         id: ansible-host
