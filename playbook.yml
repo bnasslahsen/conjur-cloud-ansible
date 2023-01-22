@@ -4,7 +4,7 @@
   connection: local
   become: yes
   vars:
-    test_password: "{{ lookup('cyberark.conjur.conjur_variable', 'data/vault/bnl-ansible-safe/Database-MySQL-ansible-test-user/password', validate_certs=false) }}"
+    test_password: "{{ lookup('cyberark.conjur.conjur_variable', 'data/vault/bnl-ansible-safe/Database-MySQL-ansible-test-user/password') }}"
   tasks:
     - name: Lookup variable in Conjur
       debug:
