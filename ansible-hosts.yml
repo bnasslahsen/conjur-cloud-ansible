@@ -6,7 +6,7 @@
       id: ansible-apps
     - &hosts
       - !host
-        id: demos/hello-cloud-ci
+        id: ansible-host
         annotations:
           description: Global host identity for Ansible
           authn/api-key: true
