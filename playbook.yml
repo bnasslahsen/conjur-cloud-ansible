@@ -8,5 +8,4 @@
   tasks:
     - name: Lookup variable in Conjur
       debug:
-        msg: "{{test_password }}"
-
+        msg: "{{test_password.split('\n')  }}"
