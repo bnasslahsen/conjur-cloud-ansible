@@ -22,15 +22,15 @@ conjur policy update -b data/vault -f ansible-user-grants.yml
 
 - Declare Your Apps - AS Projects Team
 ```shell
-./load-hosts.sh
+./1-load-hosts.sh
 ```
 
 - Initiate Ansible setup:
 ```shell
-./init-ansible.sh
+./2-init-ansible.sh
 ```
 
 - Lanch Ansible test playbook:
 ```shell
-./test-ansible.sh
+./3-test-ansible.sh
 ```
