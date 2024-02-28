@@ -1,3 +1,0 @@
-- !grant
-  role: !group bnl-ansible-safe-admins
-  member: !group /data/bnl/ansible-team/managers

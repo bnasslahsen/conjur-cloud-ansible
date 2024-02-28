@@ -1,13 +1,9 @@
-- !policy
-  id: ansible-apps
-  owner: !group managers
-  body:
-    - &hosts
-      - !host
-        id: ansible-host
-        annotations:
-          description: Global host identity for Ansible
-          authn/api-key: true
-    - !grant
-      role: !group
-      members: *hosts
+- &hosts
+  - !host
+    id: ansible-host
+    annotations:
+      ansible: true
+      authn/api-key: true
+- !grant
+  role: !group
+  members: *hosts

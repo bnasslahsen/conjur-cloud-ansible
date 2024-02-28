@@ -1,17 +1,7 @@
-# conjur policy update -f ansible-branch.yml -b data/bnl
+# conjur policy update -f gitlab-branch.yml -b data
 - !policy
-  id: ansible-team
+  id: $APP_GROUP
   annotations:
     description: All Ansible policies
   body:
-    - !group managers
     - !group
-      id: ansible-apps
-      owner: !group managers
-    - !grant
-      role: !group managers
-      member: !user /bnl-ansible-user@cyberark.cloud.3433
-    - !permit
-      role: !group managers
-      privileges: [ read,update,create ]
-      resource: !policy
