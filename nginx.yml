@@ -1,5 +1,5 @@
 - name: nginx setup
-  hosts: nginx-host
+  hosts: all
   become: true
   
   tasks:
